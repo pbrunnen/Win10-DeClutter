@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DefaultAssociations>
+  <Association Identifier=".aac" ProgId="VLC.aac" ApplicationName="VLC media player" />
+  <Association Identifier=".adts" ProgId="VLC.adts" ApplicationName="VLC media player" />
+  <Association Identifier=".aif" ProgId="VLC.aif" ApplicationName="VLC media player" />
+  <Association Identifier=".aifc" ProgId="VLC.aifc" ApplicationName="VLC media player" />
+  <Association Identifier=".aiff" ProgId="VLC.aiff" ApplicationName="VLC media player" />
+  <Association Identifier=".amr" ProgId="VLC.amr" ApplicationName="VLC media player" />
+  <Association Identifier=".au" ProgId="VLC.au" ApplicationName="VLC media player" />
+  <Association Identifier=".cda" ProgId="VLC.cda" ApplicationName="VLC media player" />
+  <Association Identifier=".epub" ProgId="AppXvepbp3z66accmsd0x877zbbxjctkpr6t" ApplicationName="Microsoft Edge" />
+  <Association Identifier=".flac" ProgId="VLC.flac" ApplicationName="VLC media player" />
+  <Association Identifier=".gif" ProgId="PhotoViewer.FileAssoc.Gif" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".htm" ProgId="FirefoxHTML-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier=".html" ProgId="FirefoxHTML-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier=".jpe" ProgId="PhotoViewer.FileAssoc.Jpg" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".jpeg" ProgId="PhotoViewer.FileAssoc.Jpg" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".jpg" ProgId="PhotoViewer.FileAssoc.Jpg" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".m3u" ProgId="VLC.m3u" ApplicationName="VLC media player" />
+  <Association Identifier=".m4a" ProgId="VLC.m4a" ApplicationName="VLC media player" />
+  <Association Identifier=".m4p" ProgId="VLC.m4p" ApplicationName="VLC media player" />
+  <Association Identifier=".mid" ProgId="VLC.mid" ApplicationName="VLC media player" />
+  <Association Identifier=".mka" ProgId="VLC.mka" ApplicationName="VLC media player" />
+  <Association Identifier=".MP2" ProgId="VLC.mp2" ApplicationName="VLC media player" />
+  <Association Identifier=".mp3" ProgId="VLC.mp3" ApplicationName="VLC media player" />
+  <Association Identifier=".png" ProgId="PhotoViewer.FileAssoc.Png" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".ra" ProgId="VLC.ra" ApplicationName="VLC media player" />
+  <Association Identifier=".ram" ProgId="VLC.ram" ApplicationName="VLC media player" />
+  <Association Identifier=".rmi" ProgId="VLC.rmi" ApplicationName="VLC media player" />
+  <Association Identifier=".s3m" ProgId="VLC.s3m" ApplicationName="VLC media player" />
+  <Association Identifier=".snd" ProgId="VLC.snd" ApplicationName="VLC media player" />
+  <Association Identifier=".tif" ProgId="PhotoViewer.FileAssoc.Tiff" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".tiff" ProgId="PhotoViewer.FileAssoc.Tiff" ApplicationName="Windows Photo Viewer" />
+  <Association Identifier=".txt" ProgId="txtfile" ApplicationName="Notepad" />
+  <Association Identifier=".url" ProgId="IE.AssocFile.URL" ApplicationName="Internet Browser" />
+  <Association Identifier=".voc" ProgId="VLC.voc" ApplicationName="VLC media player" />
+  <Association Identifier=".wav" ProgId="VLC.wav" ApplicationName="VLC media player" />
+  <Association Identifier=".website" ProgId="IE.AssocFile.WEBSITE" ApplicationName="Internet Explorer" />
+  <Association Identifier=".wma" ProgId="VLC.wma" ApplicationName="VLC media player" />
+  <Association Identifier=".xm" ProgId="VLC.xm" ApplicationName="VLC media player" />
+  <Association Identifier="http" ProgId="FirefoxURL-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier="https" ProgId="FirefoxURL-308046B0AF4A39CB" ApplicationName="Firefox" />
+</DefaultAssociations>
