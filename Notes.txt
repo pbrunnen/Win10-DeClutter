@@ -1,0 +1,105 @@
+CMD:
+-------
+%SystemRoot%\SysWOW64\OneDriveSetup.exe /uninstall
+takeown /f %SystemRoot%\SysWOW64\OneDriveSetup.exe
+cacls %SystemRoot%\SysWOW64\OneDriveSetup.exe /G Everyone:F
+attrib -h -r -s %SystemRoot%\SysWOW64\OneDriveSetup.exe
+del %SystemRoot%\SysWOW64\OneDriveSetup.exe
+
+move %SystemRoot%\SystemApps\Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy %SystemRoot%\SystemApps\__BAK_Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy
+move %SystemRoot%\SystemApps\Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy %SystemRoot%\SystemApps\__BAK_Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy
+move %SystemRoot%\SystemApps\Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy %SystemRoot%\SystemApps\__BAK_Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy
+
+##  Powershell.exe -executionpolicy remotesigned -File win_user_cleanup.ps1
+
+
+Powershell:
+--------------
+
+#Calendar and Mail:
+Get-AppxPackage -allusers *windowscommunicationsapps* | Remove-AppxPackage
+Get-AppxPackage -allusers *windowscamera* | Remove-AppxPackage
+Get-AppxPackage -allusers *officehub* | Remove-AppxPackage
+Get-AppxPackage -allusers *skypeapp* | Remove-AppxPackage
+Get-AppxPackage -allusers *getstarted* | Remove-AppxPackage
+Get-AppxPackage -allusers *zunemusic* | Remove-AppxPackage
+Get-AppxPackage -allusers *windowsmaps* | Remove-AppxPackage
+Get-AppxPackage -allusers *solitairecollection* | Remove-AppxPackage
+Get-AppxPackage -allusers *bingfinance* | Remove-AppxPackage
+Get-AppxPackage -allusers *zunevideo* | Remove-AppxPackage
+Get-AppxPackage -allusers *bingnews* | Remove-AppxPackage
+Get-AppxPackage -allusers *onenote* | Remove-AppxPackage
+Get-AppxPackage -allusers *phone* | Remove-AppxPackage
+Get-AppxPackage -allusers *photos* | Remove-AppxPackage
+Get-AppxPackage -allusers *windowsstore* | Remove-AppxPackage
+Get-AppxPackage -allusers *bingsports* | Remove-AppxPackage
+Get-AppxPackage -allusers *soundrecorder* | Remove-AppxPackage
+Get-AppxPackage -allusers *bingweather* | Remove-AppxPackage
+Get-AppxPackage -allusers *xboxapp* | Remove-AppxPackage
+Get-AppxPackage -allusers *commsphone* | Remove-AppxPackage
+Get-AppxPackage -allusers *Xbox* | Remove-AppxPackage
+Get-AppxPackage -allusers *Messaging* | Remove-AppxPackage
+Get-AppxPackage -allusers *OneConnect* | Remove-AppxPackage
+Get-AppxPackage -allusers *WindowsFeedbackHub* | Remove-AppxPackage
+Get-AppxPackage -allusers *Wallet* | Remove-AppxPackage
+Get-AppxPackage -allusers *3D* | Remove-AppxPackage
+Get-AppxPackage -allusers *Sway* | Remove-AppxPackage
+Get-AppxPackage -allusers *GetHelp* | Remove-AppxPackage
+Get-AppxPackage -allusers *ConnectivityStore* | Remove-AppxPackage
+Get-AppxPackage -allusers *3dbuilder* | Remove-AppxPackage
+Get-AppxPackage -allusers *windowsphone* | Remove-AppxPackage
+Get-AppxPackage -allusers *ScreenSketch* | Remove-AppxPackage
+Get-AppxPackage -allusers *LinkedInforWindows* | Remove-AppxPackage
+Get-AppxPackage -allusers *DellDigitalDelivery* | Remove-AppxPackage
+Get-AppxPackage -allusers *SupportAssist* | Remove-AppxPackage
+
+
+# Can't remove...
+Get-AppxPackage -allusers *people* | Remove-AppxPackage
+Get-AppxPackage -allusers *CloudExperienceHost* | Remove-AppxPackage
+Get-AppxPackage -allusers *holographic* | Remove-AppxPackage
+
+
+Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
+Get-AppxPackage *windowscamera* | Remove-AppxPackage
+Get-AppxPackage *officehub* | Remove-AppxPackage
+Get-AppxPackage *skypeapp* | Remove-AppxPackage
+Get-AppxPackage *getstarted* | Remove-AppxPackage
+Get-AppxPackage *zunemusic* | Remove-AppxPackage
+Get-AppxPackage *windowsmaps* | Remove-AppxPackage
+Get-AppxPackage *solitairecollection* | Remove-AppxPackage
+Get-AppxPackage *bingfinance* | Remove-AppxPackage
+Get-AppxPackage *zunevideo* | Remove-AppxPackage
+Get-AppxPackage *bingnews* | Remove-AppxPackage
+Get-AppxPackage *onenote* | Remove-AppxPackage
+Get-AppxPackage *windowsphone* | Remove-AppxPackage
+Get-AppxPackage *photos* | Remove-AppxPackage
+Get-AppxPackage *windowsstore* | Remove-AppxPackage
+Get-AppxPackage *bingsports* | Remove-AppxPackage
+Get-AppxPackage *soundrecorder* | Remove-AppxPackage
+Get-AppxPackage *bingweather* | Remove-AppxPackage
+Get-AppxPackage *xboxapp* | Remove-AppxPackage
+Get-AppxPackage *commsphone* | Remove-AppxPackage
+Get-AppxPackage *Xbox* | Remove-AppxPackage
+Get-AppxPackage *Messaging* | Remove-AppxPackage
+Get-AppxPackage *OneConnect* | Remove-AppxPackage
+Get-AppxPackage *WindowsFeedbackHub* | Remove-AppxPackage
+Get-AppxPackage *Wallet* | Remove-AppxPackage
+Get-AppxPackage *3D* | Remove-AppxPackage
+Get-AppxPackage *Sway* | Remove-AppxPackage
+Get-AppxPackage *GetHelp* | Remove-AppxPackage
+Get-AppxPackage *ConnectivityStore* | Remove-AppxPackage
+Get-AppxPackage *3dbuilder* | Remove-AppxPackage
+Get-AppxPackage *windowsphone* | Remove-AppxPackage
+
+
+
+
+###
+To turn off the first item found in the Personalization settings, you will need to open the Privacy group in Settings and then “Speech, inking, & typing”.
+Click or tap “Stop getting to know me”.
+
+dism /online /Export-DefaultAppAssociations:"C:\Login\defaultassociations.xml"
+Dism.exe /online /import-defaultappassociations:C:\Login\defaultassociations.xml
+notepad c:\Windows\System32\OEMDefaultAssociations.xml
+
