@@ -1,0 +1,1 @@
+dism /online /Export-DefaultAppAssociations:"C:\Login\defaultassociations.xml"
