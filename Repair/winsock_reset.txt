@@ -1,2 +1,0 @@
-netsh winsock reset catalog (reset winsock entries)
-netsh int ip reset reset.log hit (reset TCP/IP stack)
